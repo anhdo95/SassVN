@@ -1,7 +1,18 @@
 /* =====================
-   TOP-BAR
+   COMMON COLORS
+   ===================== */
+/* =====================
+   TOP BAR
+   ===================== */
+/* =====================
+   MAIN
+   ===================== */
+/* =====================
+   LEFT SIDEBAR
    ===================== */
 .top-bar {
+  top: 0;
+  left: 0;
   height: 50px;
   background: #242729;
   border-top-width: 1px;
@@ -37,6 +48,8 @@
         border-color: #535a60;
         z-index: 1;
         border-color: #adb3b9;
+        -webkit-box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.3);
+        -moz-box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.3);
         box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.3); }
     .top-bar__search-bar__textbox {
       color: #d6d9dc;
@@ -55,6 +68,8 @@
         background-color: #3b4045;
         border-color: #3b4045;
         border-color: #adb3b9;
+        -webkit-box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.3);
+        -moz-box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.3);
         box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.3); }
       .top-bar__search-bar__textbox:focus + .top-bar__search-bar__submit {
         visibility: visible; }
@@ -90,14 +105,63 @@
       .top-bar__links__item--profile .bronze {
         font-size: 0.75em; }
 
+.main .left-sidebar__private-team, .main .left-sidebar__links {
+  border-bottom: 1px solid #e4e6e8; }
+
 .main {
-  margin: 0 auto;
   max-width: 1264px;
-  height: 1000px; }
-  .main__left-sidebar {
-    width: 164px; }
-  .main__content {
-    flex-grow: 1; }
+  /* =====================
+   LEFT SIDEBAR
+   ===================== */
+  /* =====================
+   CONTENT
+   ===================== */ }
+  .main .left-sidebar {
+    width: 164px;
+    padding-top: 1.5em; }
+    .main .left-sidebar__channel__thumbnail {
+      width: 96px;
+      height: 96px;
+      background-color: #666666;
+      -webkit-box-shadow: 0 2px 8px rgba(59, 64, 69, 0.2);
+      -moz-box-shadow: 0 2px 8px rgba(59, 64, 69, 0.2);
+      box-shadow: 0 2px 8px rgba(59, 64, 69, 0.2);
+      -webkit-border-radius: 0.7em;
+      -moz-border-radius: 0.7em;
+      -ms-border-radius: 0.7em;
+      border-radius: 0.7em; }
+      .main .left-sidebar__channel__thumbnail img {
+        -webkit-border-radius: 0.7em;
+        -moz-border-radius: 0.7em;
+        -ms-border-radius: 0.7em;
+        border-radius: 0.7em; }
+    .main .left-sidebar__channel__name {
+      color: #242729;
+      font-size: 1.05em; }
+    .main .left-sidebar__private-team {
+      font-size: 0.8em; }
+    .main .left-sidebar__links {
+      padding: 1.5em 0; }
+      .main .left-sidebar__links__item a {
+        display: block;
+        color: #535a60;
+        padding: 0.6em;
+        font-size: 0.8rem; }
+        .main .left-sidebar__links__item a:hover {
+          color: #242729; }
+      .main .left-sidebar__links__item--active a {
+        color: #242729;
+        background-color: #e4e6e8;
+        font-weight: bold;
+        border-right: 3px solid #666666; }
+  .main .content {
+    height: 1000px;
+    margin-left: 164px;
+    padding: 1.5em;
+    border-left: 1px solid #d6d9dc; }
+
+.footer {
+  height: 100px; }
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -123,7 +187,8 @@ ol, ul {
   list-style: none; }
 
 body {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  padding-top: 50px; }
 
 a:hover {
   text-decoration: none; }

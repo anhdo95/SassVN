@@ -81,15 +81,45 @@
     </div>
   </header>
 
-  <main class="d-flex main bg-primary">
+  <main class="main mx-auto">
 
-    <nav class="main__left-sidebar flex-shrink-1 bg-success">Left sidebar</nav>
+    <div class="left-sidebar position-fixed">
+      <nav>
+        <a class="left-sidebar__channel d-block" href="#">
+          <div class="left-sidebar__channel__thumbnail mx-auto">
+            <img class="img-thumbnail w-100 h-100" src="assets/image/channel.png" alt="SassVietNam channel" />
+          </div>
+          <div class="left-sidebar__channel__name mt-3 text-center">
+            <h3>SASS Viet Nam</h3>
+          </div>
+        </a>
+        <div class="left-sidebar__private-team pb-3 text-center text-muted">
+          <i class="fa fa-lock" aria-hidden="true"></i>&nbsp;Private team
+        </div>
+        <ol class="left-sidebar__links">
+          <li class="left-sidebar__links__item left-sidebar__links__item--active">
+            <a href="#">Questions </a>
+          </li>
+          <li class="left-sidebar__links__item">
+            <a href="#">Tags </a>
+          </li>
+          <li class="left-sidebar__links__item">
+            <a href="#">Users </a>
+          </li>
+        </ol>
+      </nav>
+    </div>
 
-    <section class="main__content flx flex-shrink-3 bg-danger">
-      Content
-      <div class="main__content__inner">
-        <div class="main__content__inner__questions bg-warning"></div>
-        <div class="main__content__inner__right-sidebar bg-info"></div>
+    <section class="content bg-light">
+      <div class="m-2 p-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus blanditiis laboriosam ipsam mollitia recusandae iste nulla! Qui aspernatur, molestiae, distinctio ipsam, rerum repellendus fuga omnis eum voluptas aliquam soluta expedita.</div>
+      <div class="m-2 p-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus blanditiis laboriosam ipsam mollitia recusandae iste nulla! Qui aspernatur, molestiae, distinctio ipsam, rerum repellendus fuga omnis eum voluptas aliquam soluta expedita.</div>
+      <div class="m-2 p-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus blanditiis laboriosam ipsam mollitia recusandae iste nulla! Qui aspernatur, molestiae, distinctio ipsam, rerum repellendus fuga omnis eum voluptas aliquam soluta expedita.</div>
+      <div class="m-2 p-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus blanditiis laboriosam ipsam mollitia recusandae iste nulla! Qui aspernatur, molestiae, distinctio ipsam, rerum repellendus fuga omnis eum voluptas aliquam soluta expedita.</div>
+      <div class="m-2 p-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus blanditiis laboriosam ipsam mollitia recusandae iste nulla! Qui aspernatur, molestiae, distinctio ipsam, rerum repellendus fuga omnis eum voluptas aliquam soluta expedita.</div>
+      <div class="m-2 p-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus blanditiis laboriosam ipsam mollitia recusandae iste nulla! Qui aspernatur, molestiae, distinctio ipsam, rerum repellendus fuga omnis eum voluptas aliquam soluta expedita.</div>
+      <div class="content__inner">
+        <div class="content__inner__questions bg-warning"></div>
+        <div class="content__inner__right-sidebar bg-info"></div>
       </div>
     </section>
 

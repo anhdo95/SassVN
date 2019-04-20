@@ -2,11 +2,13 @@ $links-width: 320px;
 $links-profile-width: 100px;
 
 .top-bar {
+  top: 0;
+  left: 0;
   height: $top-bar-height;
-  background: $top-bar-background;
+  background: $black-color;
 
   border-top-width: 1px;
-  border-color: $top-bar-border-color;
+  border-color: $light-black;
   border-top-style: solid;
   box-shadow: 0 1px 0 rgba(12, 13, 14, 0.1),
     0 1px 6px rgba(59, 64, 69, 0.1);
