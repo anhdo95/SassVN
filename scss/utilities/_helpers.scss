@@ -1,0 +1,22 @@
+@mixin top-bar-search-channel($focus: false) {
+  color: $top-bar-search-bar-channel-color;
+  background-color: $top-bar-search-bar-channel-bg-color;
+  border-color: $top-bar-search-bar-channel-bg-color;
+
+  @if $focus {
+    z-index: 1;
+    border-color: $top-bar-search-bar-item-focus-color;
+    box-shadow: $top-bar-search-bar-item-focus-box-shadow;
+  }
+}
+
+@mixin top-bar-search-textbox($focus: false) {
+  color: $top-bar-search-bar-channel-color;
+  background-color: $top-bar-search-bar-textbox-bg-color;
+  border-color: $top-bar-search-bar-textbox-bg-color;
+
+  @if $focus {
+    border-color: $top-bar-search-bar-item-focus-color;
+    box-shadow: $top-bar-search-bar-item-focus-box-shadow;
+  }
+}
