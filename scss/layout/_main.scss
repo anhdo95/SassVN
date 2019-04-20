@@ -1,0 +1,13 @@
+.main {
+  margin: 0 auto;
+  max-width: $main-width;
+  height: 1000px;
+
+  &__left-sidebar {
+    width: $left-sidebar-width;
+  }
+
+  &__content {
+    flex-grow: 1;
+  }
+}
